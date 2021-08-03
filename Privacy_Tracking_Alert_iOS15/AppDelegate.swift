@@ -16,11 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         setUpWindow()
+        
         requestCameraPermission()
         requestNotificationPermission()
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.25) {
-            self.requestTrackingAuthorization()
-        }
+        requestTrackingAuthorization()
+        
         return true
     }
     
