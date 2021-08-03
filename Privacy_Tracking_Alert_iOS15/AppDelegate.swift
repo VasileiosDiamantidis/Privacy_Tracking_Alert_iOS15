@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setUpWindow()
         requestCameraPermission()
         requestNotificationPermission()
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2.0) {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.25) {
             self.requestTrackingAuthorization()
         }
         return true
