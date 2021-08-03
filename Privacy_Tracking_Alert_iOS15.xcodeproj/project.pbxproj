@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		8113920026B96ED6007A055F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811391FF26B96ED6007A055F /* AppDelegate.swift */; };
 		8113920226B96ED6007A055F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113920126B96ED6007A055F /* SceneDelegate.swift */; };
-		8113920426B96ED6007A055F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113920326B96ED6007A055F /* ViewController.swift */; };
-		8113920726B96ED6007A055F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8113920526B96ED6007A055F /* Main.storyboard */; };
 		8113920926B96ED7007A055F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8113920826B96ED7007A055F /* Assets.xcassets */; };
 		8113920C26B96ED7007A055F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8113920A26B96ED7007A055F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,8 +17,6 @@
 		811391FC26B96ED6007A055F /* Privacy_Tracking_Alert_iOS15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Privacy_Tracking_Alert_iOS15.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		811391FF26B96ED6007A055F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8113920126B96ED6007A055F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8113920326B96ED6007A055F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8113920626B96ED6007A055F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8113920826B96ED7007A055F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8113920B26B96ED7007A055F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8113920D26B96ED7007A055F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,8 +54,6 @@
 			children = (
 				811391FF26B96ED6007A055F /* AppDelegate.swift */,
 				8113920126B96ED6007A055F /* SceneDelegate.swift */,
-				8113920326B96ED6007A055F /* ViewController.swift */,
-				8113920526B96ED6007A055F /* Main.storyboard */,
 				8113920826B96ED7007A055F /* Assets.xcassets */,
 				8113920A26B96ED7007A055F /* LaunchScreen.storyboard */,
 				8113920D26B96ED7007A055F /* Info.plist */,
@@ -126,7 +120,6 @@
 			files = (
 				8113920C26B96ED7007A055F /* LaunchScreen.storyboard in Resources */,
 				8113920926B96ED7007A055F /* Assets.xcassets in Resources */,
-				8113920726B96ED6007A055F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +130,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8113920426B96ED6007A055F /* ViewController.swift in Sources */,
 				8113920026B96ED6007A055F /* AppDelegate.swift in Sources */,
 				8113920226B96ED6007A055F /* SceneDelegate.swift in Sources */,
 			);
@@ -146,14 +138,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8113920526B96ED6007A055F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8113920626B96ED6007A055F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8113920A26B96ED7007A055F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -286,15 +270,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 58R32RC8TN;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Privacy_Tracking_Alert_iOS15/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "vetsos.Privacy-Tracking-Alert-iOS15";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,15 +289,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 58R32RC8TN;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Privacy_Tracking_Alert_iOS15/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "vetsos.Privacy-Tracking-Alert-iOS15";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
