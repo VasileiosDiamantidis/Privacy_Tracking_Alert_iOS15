@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         setUpWindow()
         requestCameraPermission()
+        requestNotificationPermission()
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2.0) {
             self.requestTrackingAuthorization()
         }
@@ -33,14 +34,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func requestCameraPermission() {
         AVCaptureDevice.requestAccess(for: .video) { status in
-            print("requestAccess status \(status)")
+            print("requestCameraPermission status: \(status)")
+        }
+    }
+    
+    private func requestNotificationPermission() {
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+            print("requestNotificationPermission granted: \(granted)")
         }
     }
 
     private func requestTrackingAuthorization() {
         ATTrackingManager.requestTrackingAuthorization {
             status in
-            print("App Tracking Transparency status: \(status.rawValue)")
+            print("requestTrackingAuthorization status: \(status.rawValue)")
         }
     }
 }
